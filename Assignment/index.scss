@@ -1,0 +1,52 @@
+/*Conpulsory task:
+___________________
+
+Stylesheet for index.html*/
+
+
+body{
+    width: 90%;
+    margin: auto;
+    //https://images.hdqwalls.com/wallpapers/4k-apex-legends-2020-ja.jpg
+    //https://images2.alphacoders.com/995/995140.jpg
+    //https://images5.alphacoders.com/115/1151285.jpg
+    background-image: url(https://images8.alphacoders.com/100/1005726.jpg);
+}
+
+#container{
+    display: grid;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+header{
+    grid-column: 1/13;
+    grid-row: 1;
+    font-size: x-large;
+    font-weight: bolder;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+section{
+    grid-column: 1/13;
+    grid-row: 2;
+    font-size: x-large;
+    text-align: left;
+    background-color: lightsteelblue;
+    opacity: 0.69;
+}
+footer{
+    grid-column: 1/13;
+    grid-row: 3;
+    font-size: x-large;
+    text-align: right;
+}
+#diffModes{
+    background-color: darkslategray;
+    text-align: left;
+}
+
+
+/*  The top has mutliple backgrounds commented out
+    because i was playing around with different sizes and
+    didn't want to delete them.
+    
+    End.*/

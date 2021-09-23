@@ -1,0 +1,252 @@
+<!--contact us page-->
+
+<!--This page will house our contact details
+as well as submit form button to allow
+users to subscribe to our newsletter.-->
+
+
+
+<!DOCTYPE html>
+
+<html lang = "en">
+
+    <head>
+        <meta charset = "utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact Us</title>
+        <link rel = "stylesheet" type = "text/css" href = "contact-us.css"/>
+        <!--Import jQuery lib.-->
+        <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"> </script>
+        <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+        <script type= "text/javascript" src="./save-for-later.js"></script>
+
+        <!--script needed for the drop-ddown menu.-->
+        <script>
+            $(function() {
+               $("#accordion").accordion({
+                  collapsible: true
+               });
+            });
+        </script>
+    </head>
+
+    <body>
+
+        <p id = "tableTitle">The Legends of Apex</p>
+        <br>
+        <table id = "apexLegends">
+
+            <tr>
+                <th>Legend</th>
+                <th>Passive</th>
+                <th>Tactical</th>
+                <th>Ultimate</th>
+            </tr>
+
+            <tr>
+                <td>Bloodhound</td>
+                <td>Foes leave behind clues for you to find.</td>
+                <td>Briefly reveal enemies, traps, and clues throughout all structures in front of you.</td>
+                <td>Enhances your senses, allowing you to see cold tracks and move faster.</td>
+            </tr>
+
+            <tr>
+                <td>Gibraltar</td>
+                <td>Aiming grants an arm shield.</td>
+                <td>Dome blocks incoming and outgoing attacks.</td>
+                <td>Call in a concentrated mortar strike on a position you mark with smoke.</td>
+            </tr>
+
+            <tr>
+                <td>Lifeline</td>
+                <td>Deploy drone to help knocked teammates.</td>
+                <td>Deploy drone that restores health.</td>
+                <td>Call in a drop-pod full of high quality defensive gear.</td>
+            </tr>
+            
+            <tr>
+                <td>Pathfinder</td>
+                <td>Scanning beacons reduces zipline wait.</td>
+                <td>Arm grapple-hook up to 50m.</td>
+                <td>Launches a zipline for the team.</td>
+            </tr>
+
+            <tr>
+                <td>Wraith</td>
+                <td>Hears voices when being aimed at by enemies.</td>
+                <td>Phases and becomes faster and does not take damage.</td>
+                <td>Link 2 locations with portals for 60 seconds.</td>
+            </tr>
+
+            <tr>
+                <td>Bangalore</td>
+                <td>Runs faster when being shot at.</td>
+                <td>Fires a smoke screen, twice.</td>
+                <td>Calls in grid-like bombardment.</td>
+            </tr>
+
+            <tr>
+                <td>Caustic</td>
+                <td>Immune to gas traps and highlights enemies in gas.</td>
+                <td>Deploys up to 6 gas traps at a time.</td>
+                <td>Throws a gas grenade, dealing increasing damage over time.</td>
+            </tr>
+  
+            <tr>
+                <td>Mirage</td>
+                <td>Goes invisible when reviving teammates.</td>
+                <td>Sends out a holo-decoy that mimics sound and actions.</td>
+                <td>Goes invisible and sends out 8 decoys at once.</td>
+            </tr>
+  
+            <tr>
+                <td>Octane</td>
+                <td>Regenerates 1 health per second.</td>
+                <td>Uses a stim to run faster, at the cost of 18 health.</td>
+                <td>Throws a jump-pad for the team.</td>
+            </tr>
+              
+            <tr>
+                <td>Watson</td>
+                <td>Regenerates 1 shield every 2 seconds, and ultimate accelerants charge her ult fully.</td>
+                <td>Places electrified fences that damage and slow enemies.</td>
+                <td>Places an arc-pylon that charges shields and destroys grenades.</td>
+            </tr>
+  
+            <tr>
+                <td>Crypto</td>
+                <td>Teammamtes can see enemies highlighted by drone within 30m.</td>
+                <td>Deploys remote control drone.</td>
+                <td>Drone fires an emp that does 50 shield damage.</td>
+            </tr>
+  
+            <tr>
+                <td>Revenant</td>
+                <td>Moves faster while crouched and climbs much higher.</td>
+                <td>Fires an are of effect grenade that stops enemies from using their abilities.</td>
+                <td>Deploys a totem that has limited range and no shields, but restores half health when shot.</td>
+            </tr>
+
+            <tr>
+                <td>Loba</td>
+                <td>Can see rare and golden loot through walls and care packages.</td>
+                <td>Throws bracelet in an arc and allows her to teleport.</td>
+                <td>Places down a staff that allows players to take any loot within radius.</td>
+            </tr>
+
+            <tr>
+                <td>Rampart</td>
+                <td>Increased magazine capacity and reload speeds with lmg's and minigun.</td>
+                <td>Deploys one-way barriers that block, and deal extra damage when fired through.</td>
+                <td>Deploys a minigun.</td>
+            </tr>
+
+            <tr>
+                <td>Horizon</td>
+                <td>Increase air control and reduce fall impacts.</td>
+                <td>Gravity lift boosts players high into the air.</td>
+                <td>Throws out a black hole that damages and slows enemies.</td>
+            </tr>
+
+            <tr>
+                <td>Fuse</td>
+                <td>Can carry double the amount of grenades, and launch them further.</td>
+                <td>Shoots a knuckle cluster grenade.</td>
+                <td>Shoots a ring of fire that damages and highlights enemies insdie.</td>
+            </tr>
+
+            <tr>
+                <td>Valkyrie</td>
+                <td>Has vtol jets that allow her to fly/ hover for a while, and scans enemies while repositioning.</td>
+                <td>Fires a swarm of rockets that slow and damage enemies.</td>
+                <td>Launches into the sky, with teammates, and can reposition.</td>
+            </tr>
+
+            <tr>
+                <td>Seer</td>
+                <td>Has a heartbeat sensor that shows enemies locations up to 75m.</td>
+                <td>Fires a scan that damages enemies and tracks them for 8 seconds.</td>
+                <td>Deploys a drone-dome that scans enemies moving or shooting within.</td>
+            </tr>
+
+            <button onclick="hideShow()">Click to hide/ show the table!</button>
+
+        </table>
+        <br><br><br>
+
+
+        <!--drop-down menu with forms inside.-->
+        <div id = "accordion">
+
+            <!--form to leave a comment.-->
+            <h2>Leave a comment for us:</h2>
+            <div>
+
+                <form>
+
+                    <label for = "userName">Your username:</label>
+                    <br>
+                    <input type = "text" id = "userName">
+                    <br>
+                    <label for = "userComment">What you would like to say:</label>
+                    <br>
+                    <input type = "text" id = "userComment">
+                    <br>
+                    <button type="button" onclick="clearField()">Submit</button>
+    
+                    <!--Task does not specify if comments must be made visible or displayed or what we do with them.-->
+                    
+                </form>
+
+            </div>
+            
+            <!--form to get in touch with us.-->
+            <h2>Please leave your details below and we will get in touch with you.</h2>
+            <div>
+
+                <form>
+
+                    <label for = "userContact">Your name:</label>
+                    <br>
+                    <input type = "text" id ="userContact">
+                    <br>
+                    <label for = "userMail">Your Email:</label>
+                    <br>
+                    <input type = "email" id ="userMail">
+                    <br>
+                    <label for = "userPhone">Your Phone number:</label>
+                    <br>
+                    <input type = "tel" id ="userPhone">
+                    <br>
+                    <button type="button" onclick="clearField()">Submit</button>
+    
+                    <!--Task does not specify if we must display a telephone number or simply take down user details,
+                    so the latter is what I have done.-->
+                    
+                </form>
+
+            </div>
+
+        </div>
+        
+        <br>
+        <a id = "homeLink" target= "_blank" href="../Assignments/index.html">
+        Back to the Homepage.</a>
+        <br><br>
+
+    </body>
+
+</html>
+
+
+<!--referenes:
+#1  Apex legends fan wiki , https://apexlegends.fandom.com/wiki/Legend ,
+    Retrieved on 12/08/2021 ,
+    Used for checking order of legends' release
+
+#2  Apex legends fan wiki , https://apexlegends.fandom.com/wiki/Ability ,
+    Retrieved on 12/08/2021 ,
+    Used for checking legends's abilities.
+-->
+
+<!--End.-->
