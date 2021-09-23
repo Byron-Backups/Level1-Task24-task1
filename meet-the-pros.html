@@ -1,0 +1,217 @@
+<!--Meet the pros.-->
+
+<!--This page houses the current pros to follow
+and pictures of them as well as links to their socials.
+This will also house the radio button which will
+allow users to vote on changes they want to see.
+(maybe aslo link this from another page?)
+
+perhaps do each photo set in its own section and have
+tne matching socials in the corresponding aside - each in own row-->
+
+
+<!DOCTYPE html>
+
+<html lang = "en">
+
+    <head>
+        <meta charset = "utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Meet the Pros</title>
+        <link rel = "stylesheet" type = "text/css" href = "meet-the-pros.css"/>
+        <script type='text/javascript' src="./save-for-later.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+        <link rel = "stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+
+    <body>
+
+        <!--Again i opted for a single <div>
+            to allow for easier manipulation & structure.-->
+        <div id = "container">
+
+            <header>
+                <!--your standard heading.-->
+                <p>
+                    <h1>Meet some of the pros:</h1>
+                    <br>
+                </p>
+
+            </header>
+
+
+            <!--Gaming Merchant image.-->
+            <section id = "gamer1">
+
+                <img src = "./images/meet-the-pros/screenshot-GM-4.JPG"
+                id = "picturePros"
+                alt = "GamingMerchant img 4">
+
+            </section>
+    
+            <!--Gaming Merchant links - row 1.-->
+            <aside id = "gamer1">
+
+                <p>
+
+                    <h2>GamingMerchant</h2>
+                    <br>
+                    <a target = "_blank" href = "https://www.thegamingmerchant.com/">
+                    Main webpage.</a>
+                    <br><br>
+                    <a target = "_blank" href = "https://www.youtube.com/user/MinecraftPECheats">
+                    YouTube Channel
+                    </a>
+                    <br><br>
+                    <a target = "_blank" href = "https://twitter.com/gamingmerchant_">
+                    Twitter page
+                    </a>
+
+                </p>
+
+            </aside>
+
+            <!--iTempPlays image.-->
+            <section id = "gamer2">
+
+                <img src = "./images/meet-the-pros/screenshot-iTemp-3.JPG" 
+                alt = "iTemp img 3">
+
+            </section>
+
+            <!--iTempPlays links - row 2.-->
+            <aside id = "gamer2">
+                
+                <p>
+
+                    <h2>iTempPlays</h2>
+                    <br>
+                    <a target = "_blank" href = "https://www.youtube.com/user/iTemp2">
+                    YouTube Channel
+                    </a>
+                    <br><br>
+                    <a target = "_blank" href = "http://www.twitter.com/iTempp">
+                    Twitter page
+                    </a>
+
+                </p>
+
+            </aside>
+
+            <!--KandyRew image.-->
+            <section id = "gamer3">
+
+                <img src = "./images/meet-the-pros/screenshot-kandy-2.JPG" 
+                alt = "kandyrew img 2">
+
+            </section>
+
+            <!--KandyRew links - row 3.-->
+            <aside id = "gamer3">
+                
+                <p>
+
+                    <h2>KandyRew</h2>
+                    <br>
+                    <a target = "_blank" href = "https://www.twitch.tv/kandyrew">
+                    Twitch Channel
+                    </a>
+                    <br><br>
+                    <a target = "_blank" href = "https://www.youtube.com/user/KandyREW">
+                    YouTube Channel
+                    </a>
+                    <br><br>
+                    <a target = "_blank" href = "https://twitter.com/kAndyREW">
+                    Twitter page
+                    </a>
+
+                </p>
+
+            </aside>
+
+            <!--luluLuvely image.-->
+            <section id = "gamer4">
+
+                <img src = "./images/meet-the-pros/screenshot-LL-1.JPG" 
+                alt = "lululuvely img 1">
+
+            </section>
+
+            <!--LuluLuvely links - row 4.-->
+            <aside id = "gamer4">
+                
+                <p>
+
+                    <h2>LuluLuvely</h2>
+                    <br>
+                    <a target = "_blank" href = "https://www.twitch.tv/lululuvely">
+                    Twitch Channel
+                    </a>
+                    <br><br>
+                    <a target = "_blank" href = "https://www.youtube.com/channel/UCt_6XVmrRDEeOOuSo1iunDg">
+                    YouTube Channel
+                    </a>
+                    <br><br>
+                    <a target = "_blank" href = "https://twitter.com/LuluLuvely">
+                    Twitter page
+                    </a>
+
+                </p>
+
+            </aside>
+
+            <!--Zylbrad image.-->
+            <section id = "gamer5">
+
+                <img src = "./images/meet-the-pros/screenshot-Zb-1.JPG" 
+                alt = "Zylbrad img 1">
+
+            </section>
+
+            <!--Zylbrad links - row 5.-->
+            <aside id = "gamer5">
+                
+                <p>
+
+                    <h2>Zylbrad</h2>
+                    <br>
+                    <a target = "_blank" href = "https://www.youtube.com/channel/UCfHweCd6pKP28kWNbI0wDig">
+                    YouTube Channel
+                    </a>
+                    <br><br>
+                    <a target = "_blank" href = "https://twitter.com/zylbrad7">
+                    Twitter page
+                    </a>
+
+                </p>
+
+            </aside>
+            
+            <!--A little footnote to encourage readers to check out these gamers.-->
+            <footer>
+
+                <button type="button" onclick="animateButton()">Click for animation</button>
+                <br><br>
+                <!--like/dislike button.-->
+                <i onclick = "toggleLikes(this)" class = "fa fa-thumbs-up"></i>
+                <br>
+
+                <p>
+                    If you haven't already, then I would recommend giving these creators some
+                    support and subscribing. Their content is top notch and they are pretty
+                    decent at the games they play. Well... they do do it for a living.
+                    <br><br>
+                    <a target= "_blank" href= "./index.html">
+                    Back to the Homepage.</a>
+                </p>
+
+            </footer>
+
+        </div>
+
+    </body>
+
+</html>
+
+<!--End.-->
